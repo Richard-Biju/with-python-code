@@ -1,44 +1,49 @@
 print ("WELCOME")
 
-def modulo_calculator():
-    x = int(input("Enter the dividend you want the remainder of: "))  
-    y = int(input("Enter the divider you want the remainder of: "))  
+def modulo_calculator(): #definition of function modulo_calculator.
+    x = int(input("Enter the dividend you want the remainder of: "))  # input function takes user's input as a string. int function convert string to an integer and sore in x.
+    y = int(input("Enter the divider you want the remainder of: "))   # stores in y
 
-    modulo = x % y
+    modulo = x % y #calculation is done, reminder of divesion (modulo).
 
-    print("The remainder of", x, "divided by", y, "is", modulo)
-
-    
+    print("The remainder of", x, "divided by", y, "is", modulo) #print the result.
+ 
 
 #modulo_calculator()
 
 
 
-def integer_division():
-    x = input ("give me a number to divident:")
-    y = input("what do you want it divided by?")
 
-    z = float(x) / int(y)
+def integer_division():  #definition of function integer_division.
+    x = input ("give me a number to divident:")  #input function takes user's input(divident) as a string and stores it in the variable x.
+    y = input("what do you want it divided by?") #input function takes user's input(divided) as a string and stores it in the variable y.
 
-    print ("the result is" + str(z)) 
+    z = float(x) / int(y) #division operation.
+    #it takes value of x to a floating point number using the float function.
+    #then it takes value of the string y to an integer using the int function and divide and store the value in z.
+
+    print ("the result is" + str(z)) #print the result,the value in z  using the + operator.
 #integer_division()
 
-def float_integer_calculator():
-    a = float(input("Enter the first float number: "))
-    b = float(input("Enter the second float number: "))
-    int_a = int(a)
-    int_b = int(b)
-    result = int_a // int_b
-    print(int_a, "//", int_b, "=", result)
+def float_integer_calculator(): #definition of function float_integer_calculator.
+    a = float(input("Enter the first float number: ")) #takes the input from user, input function reads the user input as string, float convert the string to floating point number and stored in a.
+    b = float(input("Enter the second float number: ")) #takes the second input from user .
+    int_a = int(a) #this converts the floating point number a to an integer using the int function and store in int_a
+    int_b = int(b) #this converts the floating point number a to an integer using the int function and store in int_b
+    result = int_a // int_b #integer division calculation is performed, and the answer is stored in result
+    print(int_a, "//", int_b, "=", result) #prints the result. division operator ('//').
 
 #float_integer_calculator()
 
 
-def for_loop_counter():
-    counter = float(input("What should be the initial value of the counter?\n"))
+def for_loop_counter(): #definition of function for loop counter.
+    counter = float(input("What should be the initial value of the counter?\n")) #user input the initial value of the counter as floating point number. the input function takes the user input as string. float convert the string to a floating point number and store in counter.
     loop_count = int(input("How many times should the loop run?\n"))
     increment = float(input("How much should the counter increment by?\n"))
     is_positive = True if input("Should the counter decrement instead of incrementing? y / n\n") == 'n' else False
+    #then user enter the number of times should the loop run, input reads the input as string and int convert the string to an integer, and stored in loop_count.
+    #user enter the increment value as floating point number. and stored in increment.
+    #then it asks the user to choose y or n. if user input n then is_positive is set to true otherwise to false.
 
     if not is_positive:
         increment = increment * -1
@@ -47,6 +52,12 @@ def for_loop_counter():
         counter = counter + increment
 
     print("The final value of the counter is " + str(counter))
+    # the if statement checks if is positive is false.
+    #the line inside the if  ,increment value by multiplying it by -1.
+    #for loop that iterates loop count times.
+    #This line inside the for loop,  counter value by adding the increment or decrement value.
+    #after this it print the final value of the counter.
+
 
 #for_loop_counter()
 
