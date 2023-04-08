@@ -62,13 +62,13 @@ def for_loop_counter(): #definition of function for loop counter.
 #for_loop_counter()
 
 
-def print_ascii_values():
-    char = input("Please enter a character: ")
-    if len(char) == 1:
-        ascii_value = ord(char)
-        print("The ASCII value of", char, "is:", ascii_value)
+def print_ascii_values():  #definition of function for print_ascii_values.
+    char = input("Please enter a character: ")  #takes input from the user and store in char.
+    if len(char) == 1:  #it checks if the char is equal to 1 , if it is, the code inside the if block will be executed.
+        ascii_value = ord(char) #the ord function will calculate the ascii value of the character stored in char, and store it in ascii value.
+        print("The ASCII value of", char, "is:", ascii_value) #this prints the results.
     else:
-        print("Please enter only one character.")
+        print("Please enter only one character.") #if the user enter more than one character the else function is excuted .
 
 #print_ascii_values()
 
@@ -88,7 +88,8 @@ def change_machine():
     print("Quarters:", coin_counts[0])
     print("Dimes:", coin_counts[1])
     print("Nickels:", coin_counts[2])
-
+   #definition of function for change machine.
+   #
 #change_machine()
 
 
