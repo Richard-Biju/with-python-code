@@ -89,7 +89,11 @@ def change_machine():
     print("Dimes:", coin_counts[1])
     print("Nickels:", coin_counts[2])
    #definition of function for change machine.
-   #
+   #the coin and coin counts represents the coin order, the coin has value 25, 10, 5 which means quarters, dimes, and nickels in cents. 
+   # next it takes input from user and convert it into float and store the result in amount.
+   # calculation is done by multiplied by 100 to convert it into cents.
+   # in the for loop in each step the coin value is stored. The calculation is done by integer division of cents by coin and the remainder is stored back in cents using the modulo operator %.
+   # next line prints the results. 
 #change_machine()
 
 
@@ -135,7 +139,18 @@ def rock_paper_scissors():
         print("You lost. You chose " + choice + ", and the AI chose " + ai_choice)
 
     return choice
-
+#this code is a game of rock, paper and scissor.
+#the import random function pick random integer.
+#in if else, code takes user input to a string of this game choice. if choice is 1 rock it returns rock.
+#if the choice is 2 it returns paper, if the choice is 3 it returns scissor.
+#next it initializes a variable number_choice to 0.
+#after that in while loop the user can choose rock paper and scissor. The user choice is stored as an integer in the variable number_choice. The while loop continues until number_choice is between 1 and 3.
+#ai number choice function will choose a number between 1 and 3.
+#next the user choise and ai choice is convert to string using rock_paper_scissors_choices function.
+#in the if choice compares both user and ai choice. 
+#if they are same the game print draw.
+# the if else statement is to check the winner of the game . if user win the won is set to true.
+#in the next line it prints the result.
 #rock_paper_scissors()
 
 
@@ -156,7 +171,15 @@ def mario_wins_a_level():
             print("#")
         else:
             print("|")
-
+        
+#definition of function for mario wins a level.
+#the stair = 0.
+#in the while loop , it asks the user to enter the number of stairs(#).
+# the number is stored as an integer in the variable stairs.
+#the while loop checks the number of stairs is between 1 and 20. if it is not in between in  this number it prints "Please enter the stairs between 1 and 20."
+# next in the for loop iterates the stair value.
+# next line print the stairs. stairs -1 for spaces. and i+2 for '#'. 
+# next in the if else statement the flag is printed. If i is 0, the code outputs "|>". If i is stairs - 1, the code outputs "#". If i is neither 0 nor stairs - 1, the code outputs "|". and thats how the flag is printed.
 #mario_wins_a_level()
 
 def main():
@@ -188,6 +211,12 @@ def main():
         print("Invalid input. Please enter a valid option.")
 
 main()
+#this is the starting step  of the code.
+#the dictionary function allows the user to choose from a set of functions. if the user enter 0 the modulo calculator code runs.
+# the user input function allows the user to choce the function.
+#the if else statement checks user's input is in the dictionary functions. if the user enter 8 the else statement will print invalid input.
+#THE main() function starts the program.
+
 
 
 
